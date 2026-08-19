@@ -5233,7 +5233,7 @@ P.actionbar = {
 			HUNTER = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3;",
 			MAGE = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3;"
 		},
-		visibility = "[vehicleui][possessbar] hide; show"
+		visibility = ""
 	},
 	bar2 = {
 		enabled = false,
