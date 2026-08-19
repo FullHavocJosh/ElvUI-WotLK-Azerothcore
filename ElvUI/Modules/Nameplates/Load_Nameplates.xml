@@ -11,7 +11,7 @@
 	<Script file="Elements\Name.lua"/>
 	<Script file="Elements\RaidIcon.lua"/>
 	<Script file="Elements\HealerIcon.lua"/>
-	<Script file="Elements\Elite.lua"/>
+	<Script file="Elements\ClassificationIndicator.lua"/>
 	<Script file="Elements\Highlight.lua"/>
 	<Script file="Elements\IconFrame.lua"/>
 </Ui>

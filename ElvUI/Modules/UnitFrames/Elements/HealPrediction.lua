@@ -5,22 +5,22 @@ local UF = E:GetModule("UnitFrames")
 --WoW API / Variables
 local CreateFrame = CreateFrame
 
-function UF.HealthClipFrame_HealComm(frame)
+function UF.HealthClipFrame_HealPrediction(frame)
 	local pred = frame.HealCommBar
 	if pred then
-		UF:SetAlpha_HealComm(pred, true)
-		UF:SetVisibility_HealComm(pred)
+		UF:SetAlpha_HealPrediction(pred, true)
+		UF:SetVisibility_HealPrediction(pred)
 	end
 end
 
-function UF:SetAlpha_HealComm(obj, show)
+function UF:SetAlpha_HealPrediction(obj, show)
 	obj.myBar:SetAlpha(show and 1 or 0)
 	obj.otherBar:SetAlpha(show and 1 or 0)
 end
 
-function UF:SetVisibility_HealComm(obj)
-	-- the first update is from `HealthClipFrame_HealComm`
-	-- we set this variable to allow `Configure_HealComm` to
+function UF:SetVisibility_HealPrediction(obj)
+	-- the first update is from `HealthClipFrame_HealPrediction`
+	-- we set this variable to allow `Configure_HealPrediction` to
 	-- update the elements overflow lock later on by option
 	if not obj.allowClippingUpdate then
 		obj.allowClippingUpdate = true
@@ -35,7 +35,7 @@ function UF:SetVisibility_HealComm(obj)
 	end
 end
 
-function UF:Construct_HealComm(frame)
+function UF:Construct_HealPrediction(frame)
 	local health = frame.Health
 	local parent = health.ClipFrame
 
@@ -55,19 +55,19 @@ function UF:Construct_HealComm(frame)
 	local healPrediction = {
 		myBar = myBar,
 		otherBar = otherBar,
-		PostUpdate = UF.UpdateHealComm,
+		PostUpdate = UF.UpdateHealPrediction,
 		maxOverflow = 1,
 		health = health,
 		parent = parent,
 		frame = frame
 	}
 
-	UF:SetAlpha_HealComm(healPrediction)
+	UF:SetAlpha_HealPrediction(healPrediction)
 
 	return healPrediction
 end
 
-function UF:Configure_HealComm(frame)
+function UF:Configure_HealPrediction(frame)
 	if frame.db.healPrediction and frame.db.healPrediction.enable then
 		local healPrediction = frame.HealCommBar
 		local myBar = healPrediction.myBar
@@ -76,7 +76,7 @@ function UF:Configure_HealComm(frame)
 		healPrediction.maxOverflow = 1 + (c.maxOverflow or 0)
 
 		if healPrediction.allowClippingUpdate then
-			UF:SetVisibility_HealComm(healPrediction)
+			UF:SetVisibility_HealPrediction(healPrediction)
 		end
 
 		if not frame:IsElementEnabled("HealComm4") then
@@ -158,7 +158,7 @@ local function UpdateFillBar(frame, previousTexture, bar, amount)
 	return bar:GetStatusBarTexture()
 end
 
-function UF:UpdateHealComm(_, myIncomingHeal, allIncomingHeal)
+function UF:UpdateHealPrediction(_, myIncomingHeal, allIncomingHeal)
 	local health = self.health
 	local previousTexture = health:GetStatusBarTexture()
 

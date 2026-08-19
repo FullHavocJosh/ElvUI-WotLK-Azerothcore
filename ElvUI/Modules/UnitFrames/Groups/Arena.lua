@@ -27,7 +27,7 @@ function UF:Construct_ArenaFrames(frame)
 	frame.Buffs = self:Construct_Buffs(frame)
 	frame.Debuffs = self:Construct_Debuffs(frame)
 	frame.Castbar = self:Construct_Castbar(frame)
-	frame.HealCommBar = self:Construct_HealComm(frame)
+	frame.HealCommBar = self:Construct_HealPrediction(frame)
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
 	frame.TargetGlow = self:Construct_TargetGlow(frame)
 	frame.Trinket = self:Construct_Trinket(frame)
@@ -109,7 +109,7 @@ function UF:Update_ArenaFrames(frame, db)
 	UF:Configure_Cutaway(frame)
 
 	--Heal Prediction
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)

@@ -43,7 +43,7 @@ function UF:Construct_RaidFrames()
 	self.GroupRoleIndicator = UF:Construct_RoleIcon(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-	self.HealCommBar = UF:Construct_HealComm(self)
+	self.HealCommBar = UF:Construct_HealPrediction(self)
 	self.GPS = UF:Construct_GPS(self)
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
@@ -215,7 +215,7 @@ function UF:Update_RaidFrames(frame, db)
 	UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--GPS Arrow
 	UF:Configure_GPS(frame)

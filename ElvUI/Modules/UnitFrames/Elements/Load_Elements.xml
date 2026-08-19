@@ -1,7 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
 	<Script file="AuraBars.lua"/>
 	<Script file="Auras.lua"/>
-	<Script file="BuffIndicator.lua"/>
+	<Script file="AuraWatch.lua"/>
 	<Script file="CastBar.lua"/>
 	<Script file="ClassBars.lua"/>
 	<Script file="CombatIndicator.lua"/>
@@ -12,14 +12,14 @@
 	<Script file="FrameGlow.lua"/>
 	<Script file="GPS.lua"/>
 	<Script file="Happiness.lua"/>
-	<Script file="HealComm.lua"/>
+	<Script file="HealPrediction.lua"/>
 	<Script file="Health.lua"/>
 	<Script file="InfoPanel.lua"/>
 	<Script file="Name.lua"/>
 	<Script file="Portrait.lua"/>
 	<Script file="Power.lua"/>
-	<Script file="PvPIcon.lua"/>
-	<Script file="PvPIndicator.lua"/>
+	<Script file="PVPIcon.lua"/>
+	<Script file="PVPText.lua"/>
 	<Script file="RaidDebuffs.lua"/>
 	<Script file="RaidIcon.lua"/>
 	<Script file="RaidRoleIcons.lua"/>

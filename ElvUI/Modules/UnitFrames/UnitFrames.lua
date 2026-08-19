@@ -1024,7 +1024,7 @@ function UF:UpdateAllHeaders(event)
 		self:CreateAndUpdateHeaderGroup(group, nil, nil, shouldUpdateHeader)
 
 		if group == "party" or group == "raid" or group == "raid40" then
-			--Update BuffIndicators on profile change as they might be using profile specific data
+			--Update AuraWatch on profile change as it might be using profile specific data
 			self:UpdateAuraWatchFromHeader(group)
 		end
 	end

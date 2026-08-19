@@ -513,7 +513,7 @@ local function ClassBuff(id, point, color, anyUnit, onlyShowMissing, style, disp
 	}
 end
 
-G.unitframe.buffwatch = {
+G.unitframe.aurawatch = {
 	PRIEST = {
 		[6788] = ClassBuff(6788, "TOPLEFT", {1, 0, 0}, true),				-- Weakened Soul
 		[10060] = ClassBuff(10060, "RIGHT", {0.89, 0.09, 0.05}),			-- Power Infusion
@@ -562,9 +562,9 @@ G.unitframe.buffwatch = {
 	WARLOCK = {},
 }
 
--- Profile specific BuffIndicator
+-- Profile specific AuraWatch
 P.unitframe.filters = {
-	buffwatch = {}
+	aurawatch = {}
 }
 
 -- Ticks

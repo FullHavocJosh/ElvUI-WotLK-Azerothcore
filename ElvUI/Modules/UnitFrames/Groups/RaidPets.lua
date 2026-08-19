@@ -33,7 +33,7 @@ function UF:Construct_RaidpetFrames()
 	self.MouseGlow = UF:Construct_MouseGlow(self)
 	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
-	self.HealCommBar = UF:Construct_HealComm(self)
+	self.HealCommBar = UF:Construct_HealPrediction(self)
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
 	self.customTexts = {}
@@ -168,7 +168,7 @@ function UF:Update_RaidpetFrames(frame, db)
 	UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--Fader
 	UF:Configure_Fader(frame)
@@ -176,7 +176,7 @@ function UF:Update_RaidpetFrames(frame, db)
 	--Cutaway
 	UF:Configure_Cutaway(frame)
 
-	--BuffIndicator
+	--AuraWatch
 	UF:UpdateAuraWatch(frame, true) --2nd argument is the petOverride
 
 	--CustomTexts

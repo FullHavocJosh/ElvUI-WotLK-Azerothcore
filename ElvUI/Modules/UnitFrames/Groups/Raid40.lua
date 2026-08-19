@@ -42,7 +42,7 @@ function UF:Construct_Raid40Frames()
 	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-	self.HealCommBar = UF:Construct_HealComm(self)
+	self.HealCommBar = UF:Construct_HealPrediction(self)
 	self.GPS = UF:Construct_GPS(self)
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
@@ -218,7 +218,7 @@ function UF:Update_Raid40Frames(frame, db)
 	UF:Configure_ResurrectionIcon(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--GPS Arrow
 	UF:Configure_GPS(frame)

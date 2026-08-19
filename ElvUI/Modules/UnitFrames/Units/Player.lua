@@ -47,9 +47,9 @@ function UF:Construct_PlayerFrame(frame)
 	frame.RaidRoleFramesAnchor = self:Construct_RaidRoleFrames(frame)
 	frame.RestingIndicator = self:Construct_RestingIndicator(frame)
 	frame.CombatIndicator = self:Construct_CombatIndicator(frame)
-	frame.PvPText = self:Construct_PvPIndicator(frame)
+	frame.PvPText = self:Construct_PvPText(frame)
 	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
-	frame.HealCommBar = self:Construct_HealComm(frame)
+	frame.HealCommBar = self:Construct_HealPrediction(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
 	frame.PvPIndicator = self:Construct_PvPIcon(frame)
@@ -132,7 +132,7 @@ function UF:Update_PlayerFrame(frame, db)
 	UF:UpdateNameSettings(frame)
 
 	--PvP
-	UF:Configure_PVPIndicator(frame)
+	UF:Configure_PVPText(frame)
 
 	--Power
 	UF:Configure_Power(frame)
@@ -172,7 +172,7 @@ function UF:Update_PlayerFrame(frame, db)
 	UF:Configure_RaidIcon(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--AuraBars
 	UF:Configure_AuraBars(frame)

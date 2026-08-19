@@ -37,7 +37,7 @@ G.nameplates = {}
 
 G.unitframe = {
 	aurafilters = {},
-	buffwatch = {},
+	aurawatch = {},
 	raidDebuffIndicator = {
 		instanceFilter = "RaidDebuffs",
 		otherFilter = "CCDebuffs",

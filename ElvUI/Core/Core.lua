@@ -1191,6 +1191,21 @@ function E:DBConversions()
 			E.db.chat.panelColorConverted = true
 		end
 
+		--Renamed buffwatch -> aurawatch to align with retail ElvUI naming (global + per-profile filters)
+		if not E.db.unitframe.aurawatchRenameConverted then
+			if E.global.unitframe.buffwatch and not next(E.global.unitframe.aurawatch) then
+				E.global.unitframe.aurawatch = E:CopyTable(E.global.unitframe.aurawatch, E.global.unitframe.buffwatch)
+			end
+			E.global.unitframe.buffwatch = nil
+
+			if E.db.unitframe.filters.buffwatch and not next(E.db.unitframe.filters.aurawatch) then
+				E.db.unitframe.filters.aurawatch = E:CopyTable(E.db.unitframe.filters.aurawatch, E.db.unitframe.filters.buffwatch)
+			end
+			E.db.unitframe.filters.buffwatch = nil
+
+			E.db.unitframe.aurawatchRenameConverted = true
+		end
+
 		--Convert cropIcon to tristate
 		local cropIcon = E.db.general.cropIcon
 		if type(cropIcon) == "boolean" then
