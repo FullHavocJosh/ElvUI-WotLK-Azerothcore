@@ -5226,10 +5226,10 @@ P.actionbar = {
 			WARRIOR = "[bonusbar:1] 7; [bonusbar:2] 8; [bonusbar:3] 9;",
 			PRIEST = "[bonusbar:1] 7;",
 			ROGUE = "[bonusbar:1] 7; [form:3] 7;",
-			DEATHKNIGHT = "[mod:ctrl,mod:shift] 9; [mod:ctrl] 7; [mod:shift] 8; [bonusbar:5] 10; ",
-			PALADIN = "[mod:ctrl,mod:shift] 9; [mod:ctrl] 7; [mod:shift] 8; [bonusbar:5] 10; ",
-			WARLOCK = "[mod:ctrl,mod:shift] 9; [mod:ctrl] 7; [mod:shift] 8; [bonusbar:5] 10; ",
-			SHAMAN = "[mod:ctrl,mod:shift] 9; [mod:ctrl] 7; [mod:shift] 8; [bonusbar:5] 10; "
+			DEATHKNIGHT = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
+			PALADIN = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
+			WARLOCK = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
+			SHAMAN = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; "
 		},
 		visibility = "[vehicleui][overridebar][possessbar] hide; show"
 	},
