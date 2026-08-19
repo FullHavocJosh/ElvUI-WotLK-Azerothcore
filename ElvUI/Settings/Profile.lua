@@ -5208,7 +5208,7 @@ P.actionbar = {
 	},
 	bar1 = {
 		enabled = true,
-		buttons = 8,
+		buttons = 12,
 		mouseover = false,
 		buttonsPerRow = 12,
 		point = "BOTTOMLEFT",
