@@ -17,9 +17,8 @@ This UI will arrange your interface to be more flexible and practical.
 
 This fork ships with a curated default profile rather than upstream's stock layout. Notably:
 
-- **Action bars 1 and 2 are both full 12-button bars, always visible**, styled consistently (48px buttons, backdrop skin) rather than the single ConsolePort-oriented bar upstream defaults to.
-- **Bar 1 pages via keyboard modifiers, not extra visible bars.** Holding **Ctrl**, **Shift**, or **Ctrl+Shift** swaps bar 1 to a different action page in place — so a single 12-icon bar covers what would otherwise take several stacked bars. This is built in as class-conditional paging (Death Knight/Paladin/Warlock/Shaman get the modifier-driven bonus-bar paging by default, alongside upstream's existing Druid/Warrior/Priest/Rogue stance-bar paging — both sets are active, nothing lost).
-- Two secondary vertical strip bars (3 and 5) that fade in via the global fade setting, plus two compact mouseover overflow bars (4 and 6).
+- **Just one action bar, bar 1, with all 12 slots, always visible** — 50px buttons, backdrop skin. Bars 2-6 are disabled by default; everything happens on this one bar instead of spreading across several stacked bars.
+- **Bar 1 pages via keyboard modifiers, not extra visible bars.** Holding **Ctrl**, **Shift**, or **Ctrl+Shift** swaps the entire bar to a different action page in place. This is built in as class-conditional paging (Death Knight/Paladin/Warlock/Shaman get the modifier-driven bonus-bar paging by default, alongside upstream's existing Druid/Warrior/Priest/Rogue stance-bar paging — both sets are active, nothing lost).
 
 ## Screenshots:
 
