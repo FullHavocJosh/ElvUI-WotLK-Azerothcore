@@ -2,7 +2,9 @@
 [![Discord](https://discordapp.com/api/guilds/259362419372064778/widget.png?style=shield)](https://discord.gg/UXSc7nt)
 [![GitHub Actions](https://github.com/ElvUI-WotLK/ElvUI/workflows/lint/badge.svg?branch=master&event=push)](https://github.com/ElvUI-WotLK/ElvUI/actions?query=workflow%3Alint+branch%3Amaster)
 
-# ElvUI - Wrath of the Lich King (3.3.5a)
+# ElvUI - Wrath of the Lich King (3.3.5a) — AzerothCore fork
+
+> **This is a fork.** It builds on [ElvUI-WotLK/ElvUI](https://github.com/ElvUI-WotLK/ElvUI), the community backport of ElvUI to the original 3.3.5a client, which in turn is based on the modern, actively-developed [tukui-org/ElvUI](https://github.com/tukui-org/ElvUI). This fork's changes are AzerothCore-specific customizations and features backported from tukui-org/ElvUI where WotLK's older API allows it — not a general-purpose replacement for either upstream project.
 
 This is the backported version of ElvUI for World of Warcraft - Wrath of the Lich King (3.3.5a)
 <br />
@@ -10,6 +12,13 @@ ElvUI is a full UI replacement.
 It completely replaces the default Blizzard UI at every level with a new and better interface.
 As such, you'll only ever have to update ElvUI and not worry too much about its individual components.
 This UI will arrange your interface to be more flexible and practical.
+
+## Default Layout
+
+This fork ships with a curated default profile rather than upstream's stock layout. Notably:
+
+- **Just one action bar, bar 1, with all 12 slots, always visible** — 50px buttons, backdrop skin. Bars 2-6 are disabled by default; everything happens on this one bar instead of spreading across several stacked bars.
+- **Bar 1 pages via keyboard modifiers, not extra visible bars.** Holding **Ctrl**, **Shift**, or **Ctrl+Shift** swaps the entire bar to a different action page in place. This is built in as class-conditional paging (Death Knight/Paladin/Warlock/Shaman get the modifier-driven bonus-bar paging by default, alongside upstream's existing Druid/Warrior/Priest/Rogue stance-bar paging — both sets are active, nothing lost).
 
 ## Screenshots:
 
@@ -37,11 +46,11 @@ This UI will arrange your interface to be more flexible and practical.
 
 ## Installation:
 
-1. Download **[Latest Version](https://github.com/ElvUI-WotLK/ElvUI/releases/latest)**
-2. Unpack the Zip file
-3. Open the folder "ElvUI-(#.##)"
-4. Copy (or drag and drop) **ElvUI** and **ElvUI_OptionsUI** into your Wow-Directory\Interface\AddOns
-5. Restart WoW
+1. Clone this repo **with submodules**: `git clone --recurse-submodules https://github.com/FullHavocJosh/ElvUI-WotLK-Azerothcore.git` (the submodules under `Plugins/` are optional add-ons — skip `--recurse-submodules` if you only want core ElvUI)
+2. Copy (or drag and drop) **ElvUI** and **ElvUI_OptionsUI** into your Wow-Directory\Interface\AddOns
+3. Restart WoW
+
+Note: this fork's default profile (see [Default Layout](#default-layout) above) only applies to a fresh ElvUI profile — an existing profile from upstream ElvUI-WotLK keeps its own saved settings and won't pick up these defaults automatically.
 
 ## Plugins:
 [ElvUI_Enhanced](https://github.com/ElvUI-WotLK/ElvUI_Enhanced)
@@ -118,17 +127,6 @@ This UI will arrange your interface to be more flexible and practical.
                           example: /resetui uf (resets all unitframes)
 
 
-## Languages:
-
-ElvUI supports and contains language specific code for the following gameclients:
-* English (enUS)
-* Korean (koKR)
-* French (frFR)
-* German (deDE)
-* Chinese (zhCN)
-* Spanish (esES)
-* Russian (ruRU)
-
 ## FAQ:
 
 ### I would like to report a bug. What i need to do?
@@ -159,67 +157,3 @@ Make sure you're using the latest available version of "AddonName" for WotLK bef
 
 ### Can you backport "AddonName" to WotLK?
 The only purpose of ElvUI-WotLK is to improve the backported version of ElvUI and its plugins.
-
-
-## FAQ RU:
-
-### Я хочу сообщить о баге. Что мне нужно делать?
-Убедитесь что вы используете последнюю версию [ElvUI](https://github.com/ElvUI-WotLK/ElvUI/releases/latest)
-<br />
-Детально опишите свою проблему.
-<br />
-Если ваша проблема носит визуальный характер, пожалуйста предоставьте скриншоты.
-<br />
-Что вы делали, когда произошла ошибка?
-<br />
-Опишите, как можно воспроизвести эту ошибку.
-<br />
-Чем больше информации о проблемы вы предоставите, тем быстрее вам помогут.
-
-### Я хотел бы попросить о добавлении возможности в ElvUI. Где написать?
-Данный репозиторий создан с целью воспроизведения оригинального функционал ElvUI.
-<br />
-Запросы на добавление нового функционала рассматриваются в репозитории [ElvUI_Enhanced](https://github.com/ElvUI-WotLK/ElvUI_Enhanced/issues)
-<br />
-Запросы на изменение существующего функционала **ElvUI** рассматриваются в репозитории [ElvUI_CustomTweaks](https://github.com/ElvUI-WotLK/ElvUI_CustomTweaks/issues)
-
-### У меня проблема с ElvUI_"ИмяПлагина". Где написать?
-Создайте запрос в репозитории баг-трекере [ElvUI](https://github.com/ElvUI-WotLK)_"ИмяПлагина".
-
-### ElvUI конфликтует с "ИмяАддона".
-Убедитесь, что вы используете последнюю доступную версию "ИмяАддона" для WotLK, перед тем как создать тикет о конфликте.
-
-### Могли бы вы портировать "ИмяАддона" на WotLK?
-Единственная цель ElvUI-WotLK заключается в улучшении портированной версии ElvUI и его плагинов.
-
-
-## FAQ  中文:
-
-### 我想要报告一个问题，我需要做什么？
-确保你正在使用的是最新版本的[ElvUI]。(https://github.com/ElvUI-WotLK/ElvUI/releases/latest)
-<br />
-请尽可能清楚的描述你所遇到的问题。
-<br />
-如果你遇到的是关于图形方面的问题，请用一些截图来说明它。
-<br />
-你在做什么事情的时候这个问题发生了？
-<br />
-向我们说明如何可以复现这个问题。
-<br />
-你提供的信息越多，我们也可以更好更快的帮助你解决问题。
-
-### 我想要你们为ELvUI增加一个功能，我应该怎么做？
-本资料库的创建是为了复制源生的**ElvUI**功能。
-<br />
-如果你想要请求一个新的功能，将你的请求发布在[ElvUI_Enhanced](https://github.com/ElvUI-WotLK/ElvUI_Enhanced/issues)
-<br />
-如果你想要请求对现有**ElvUI**的功能进行修改，那么将你的请求发布在[ElvUI_CustomTweaks](https://github.com/ElvUI-WotLK/ElvUI_CustomTweaks/issues)
-
-### 我对现有的ElvUI_"插件名称"有一些建议/问题，我应该怎么做？
-在[ElvUI](https://github.com/ElvUI-WotLK)中“插件名称”资料库中的问题跟踪器中创建一个问题。
-
-### ElvUI跟“插件名称”有冲突。
-在提交表单之前确保你使用的是适用在魔兽世界·巫妖王之怒中的最新版本的“插件名称”。
-
-### 可以将“插件名称”移植到魔兽世界·巫妖王之怒中吗？
-ElvUI-WotLK的唯一目的是改进的ElvUI移植版本和它的子插件。
