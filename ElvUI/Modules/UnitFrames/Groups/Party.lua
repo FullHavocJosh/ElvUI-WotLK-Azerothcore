@@ -62,7 +62,7 @@ function UF:Construct_PartyFrames()
 		self.ThreatIndicator = UF:Construct_Threat(self)
 		self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 		self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-		self.HealCommBar = UF:Construct_HealComm(self)
+		self.HealCommBar = UF:Construct_HealPrediction(self)
 		self.GPS = UF:Construct_GPS(self)
 		self.customTexts = {}
 
@@ -265,7 +265,7 @@ function UF:Update_PartyFrames(frame, db)
 
 		UF:Configure_RoleIcon(frame)
 
-		UF:Configure_HealComm(frame)
+		UF:Configure_HealPrediction(frame)
 
 		UF:Configure_GPS(frame)
 

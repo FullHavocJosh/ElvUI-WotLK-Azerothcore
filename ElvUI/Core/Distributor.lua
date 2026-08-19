@@ -325,8 +325,8 @@ local function GetProfileData(profileType)
 		profileData.unitframe = {}
 		profileData.unitframe.aurafilters = {}
 		profileData.unitframe.aurafilters = E:CopyTable(profileData.unitframe.aurafilters, ElvDB.global.unitframe.aurafilters)
-		profileData.unitframe.buffwatch = {}
-		profileData.unitframe.buffwatch = E:CopyTable(profileData.unitframe.buffwatch, ElvDB.global.unitframe.buffwatch)
+		profileData.unitframe.aurawatch = {}
+		profileData.unitframe.aurawatch = E:CopyTable(profileData.unitframe.aurawatch, ElvDB.global.unitframe.aurawatch)
 		profileData = E:RemoveTableDuplicates(profileData, G)
 	elseif profileType == "styleFilters" then
 		profileKey = "styleFilters"

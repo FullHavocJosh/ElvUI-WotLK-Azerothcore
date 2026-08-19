@@ -30,7 +30,7 @@ function UF:Construct_TargetFrame(frame)
 	frame.ComboPointsHolder:Point("BOTTOM", E.UIParent, "BOTTOM", 0, 200)
 	frame.ComboPoints = self:Construct_Combobar(frame)
 
-	frame.HealCommBar = self:Construct_HealComm(frame)
+	frame.HealCommBar = self:Construct_HealPrediction(frame)
 	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
@@ -139,7 +139,7 @@ function UF:Update_TargetFrame(frame, db)
 	UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--Raid Icon
 	UF:Configure_RaidIcon(frame)

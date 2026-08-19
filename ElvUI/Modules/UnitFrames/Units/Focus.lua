@@ -26,7 +26,7 @@ function UF:Construct_FocusFrame(frame)
 	frame.Castbar.LatencyTexture:Hide()
 	frame.RaidTargetIndicator = self:Construct_RaidIcon(frame)
 	frame.Debuffs = self:Construct_Debuffs(frame)
-	frame.HealCommBar = self:Construct_HealComm(frame)
+	frame.HealCommBar = self:Construct_HealPrediction(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
 	frame.ThreatIndicator = self:Construct_Threat(frame)
 	frame.GPS = self:Construct_GPS(frame)
@@ -116,7 +116,7 @@ function UF:Update_FocusFrame(frame, db)
 	UF:Configure_Cutaway(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--GPS
 	UF:Configure_GPS(frame)

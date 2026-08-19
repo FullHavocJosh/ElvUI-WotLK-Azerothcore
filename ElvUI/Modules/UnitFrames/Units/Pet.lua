@@ -22,7 +22,7 @@ function UF:Construct_PetFrame(frame)
 	frame.Castbar.SafeZone = nil
 	frame.Castbar.LatencyTexture:Hide()
 	frame.ThreatIndicator = self:Construct_Threat(frame)
-	frame.HealCommBar = self:Construct_HealComm(frame)
+	frame.HealCommBar = self:Construct_HealPrediction(frame)
 	frame.AuraWatch = self:Construct_AuraWatch(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
 	if E.myclass == "HUNTER" then
@@ -112,7 +112,7 @@ function UF:Update_PetFrame(frame, db)
 	UF:Configure_Castbar(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	UF:Configure_HealPrediction(frame)
 
 	--AuraBars
 	UF:Configure_AuraBars(frame)
