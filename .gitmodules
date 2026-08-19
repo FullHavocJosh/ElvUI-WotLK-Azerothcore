@@ -1,0 +1,48 @@
+[submodule "Plugins/ElvUI_Enhanced"]
+	path = Plugins/ElvUI_Enhanced
+	url = https://github.com/FullHavocJosh/ElvUI_Enhanced.git
+[submodule "Plugins/ElvUI_AddOnSkins"]
+	path = Plugins/ElvUI_AddOnSkins
+	url = https://github.com/FullHavocJosh/ElvUI_AddOnSkins.git
+[submodule "Plugins/ElvUI_AuraBarsMovers"]
+	path = Plugins/ElvUI_AuraBarsMovers
+	url = https://github.com/FullHavocJosh/ElvUI_AuraBarsMovers.git
+[submodule "Plugins/ElvUI_BagControl"]
+	path = Plugins/ElvUI_BagControl
+	url = https://github.com/FullHavocJosh/ElvUI_BagControl.git
+[submodule "Plugins/ElvUI_CastBarOverlay"]
+	path = Plugins/ElvUI_CastBarOverlay
+	url = https://github.com/FullHavocJosh/ElvUI_CastBarOverlay.git
+[submodule "Plugins/ElvUI_CustomTags"]
+	path = Plugins/ElvUI_CustomTags
+	url = https://github.com/FullHavocJosh/ElvUI_CustomTags.git
+[submodule "Plugins/ElvUI_CustomTweaks"]
+	path = Plugins/ElvUI_CustomTweaks
+	url = https://github.com/FullHavocJosh/ElvUI_CustomTweaks.git
+[submodule "Plugins/ElvUI_DTBars2"]
+	path = Plugins/ElvUI_DTBars2
+	url = https://github.com/FullHavocJosh/ElvUI_DTBars2.git
+[submodule "Plugins/ElvUI_DataTextColors"]
+	path = Plugins/ElvUI_DataTextColors
+	url = https://github.com/FullHavocJosh/ElvUI_DataTextColors.git
+[submodule "Plugins/ElvUI_EnhancedFriendsList"]
+	path = Plugins/ElvUI_EnhancedFriendsList
+	url = https://github.com/FullHavocJosh/ElvUI_EnhancedFriendsList.git
+[submodule "Plugins/ElvUI_ExtraActionBars"]
+	path = Plugins/ElvUI_ExtraActionBars
+	url = https://github.com/FullHavocJosh/ElvUI_ExtraActionBars.git
+[submodule "Plugins/ElvUI_LocPlus"]
+	path = Plugins/ElvUI_LocPlus
+	url = https://github.com/FullHavocJosh/ElvUI_LocPlus.git
+[submodule "Plugins/ElvUI_MicrobarEnhancement"]
+	path = Plugins/ElvUI_MicrobarEnhancement
+	url = https://github.com/FullHavocJosh/ElvUI_MicrobarEnhancement.git
+[submodule "Plugins/ElvUI_RaidMarkers"]
+	path = Plugins/ElvUI_RaidMarkers
+	url = https://github.com/FullHavocJosh/ElvUI_RaidMarkers.git
+[submodule "Plugins/ElvUI_SwingBar"]
+	path = Plugins/ElvUI_SwingBar
+	url = https://github.com/FullHavocJosh/ElvUI_SwingBar.git
+[submodule "Plugins/ElvUI_VisualProcs"]
+	path = Plugins/ElvUI_VisualProcs
+	url = https://github.com/FullHavocJosh/ElvUI_VisualProcs.git
