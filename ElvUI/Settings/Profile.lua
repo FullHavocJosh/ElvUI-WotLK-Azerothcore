@@ -5222,14 +5222,16 @@ P.actionbar = {
 		inheritGlobalFade = false,
 		showGrid = true,
 		paging = {
-			DRUID = "[bonusbar:1,nostealth] 7; [bonusbar:1,stealth] 8; [bonusbar:2] 8; [bonusbar:3] 9; [bonusbar:4] 10;",
-			WARRIOR = "[bonusbar:1] 7; [bonusbar:2] 8; [bonusbar:3] 9;",
-			PRIEST = "[bonusbar:1] 7;",
-			ROGUE = "[bonusbar:1] 7; [form:3] 7;",
+			DRUID = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:1,nostealth] 7; [bonusbar:1,stealth] 8; [bonusbar:2] 8; [bonusbar:3] 9; [bonusbar:4] 10;",
+			WARRIOR = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:1] 7; [bonusbar:2] 8; [bonusbar:3] 9;",
+			PRIEST = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:1] 7;",
+			ROGUE = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:1] 7; [form:3] 7;",
 			DEATHKNIGHT = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
 			PALADIN = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
 			WARLOCK = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
-			SHAMAN = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; "
+			SHAMAN = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3; [bonusbar:5] 5; ",
+			HUNTER = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3;",
+			MAGE = "[mod:ctrl,mod:shift] 4; [mod:ctrl] 2; [mod:shift] 3;"
 		},
 		visibility = "[vehicleui][overridebar][possessbar] hide; show"
 	},
